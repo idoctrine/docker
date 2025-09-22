@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  tutum:
+    container_name: tutum
+    image: tutum/apache-php:latest
+    ports:
+      - "8088:80"
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.tutum.rule=Path(`/tutum`)
+    volumes:
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/tutum/www:/app
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/tutum/conf/30-php-custom.ini:/etc/php5/apache2/conf.d/30-php-custom.ini
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/tutum/conf/sites-enabled:/etc/apache2/sites-enabled
+    environment:
+      - ALLOW_OVERRIDE=true
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

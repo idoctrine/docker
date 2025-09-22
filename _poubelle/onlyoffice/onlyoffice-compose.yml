@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  onlyoffice:
+    container_name: onlyoffice
+    image: onlyoffice/documentserver:6.4.2
+    environment:
+      - PUID=1000 #cmd id user 
+      - PGID=1000 #cmd id user
+      - DB_TYPE=mysql
+      - DB_HOST=mysql
+      - DB_NAME=onlyoffice
+      - DB_USER=onlyoffice
+      - DB_PWD=onlyoffice
+    volumes:
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/onlyoffice/data:/var/www/onlyoffice/Data
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/onlyoffice/lib:/var/lib/onlyoffice
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/onlyoffice/logs:/var/log/onlyoffice
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.onlyoffice.rule=Path(`/onlyoffice`)
+    ports:
+        - "1081:80"
+    restart: always
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

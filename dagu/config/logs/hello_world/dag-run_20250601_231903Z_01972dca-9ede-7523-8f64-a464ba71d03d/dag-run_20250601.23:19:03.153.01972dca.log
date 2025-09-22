@@ -1,0 +1,7 @@
+time=2025-06-01T23:19:03.171Z level=INFO msg="Step started" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d step=s1
+time=2025-06-01T23:19:03.174Z level=INFO msg="Step finished" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d step=s1 status=running
+time=2025-06-01T23:19:03.182Z level=INFO msg="Step finished" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d step=s1 status=finished
+time=2025-06-01T23:19:03.273Z level=INFO msg="Step started" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d step=s2
+time=2025-06-01T23:19:03.289Z level=INFO msg="Step finished" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d step=s2 status=running
+time=2025-06-01T23:19:03.301Z level=INFO msg="Step finished" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d step=s2 status=finished
+time=2025-06-01T23:19:03.374Z level=INFO msg="dag-run finished" dag="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d name="hello world" dagRunId=01972dca-9ede-7523-8f64-a464ba71d03d attemptID=21e565 status=finished startedAt=2025-06-01T23:19:03Z finishedAt=2025-06-01T23:19:03Z

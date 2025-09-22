@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  axelor:
+    image: axelor/aio-erp
+    container_name: axelor
+    ports:
+      - "8088:80"
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.axelor.rule=Path(`/axelor`)
+    environment:
+      - POSTGRES_DB=axelor
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/postgres/data:/var/lib/postgresql
+    restart: unless-stopped
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

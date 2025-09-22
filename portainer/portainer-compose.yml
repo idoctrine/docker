@@ -1,0 +1,17 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:2.26.1-alpine
+    container_name: portainer
+    restart: always
+    command: --http-enabled
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.portainer.rule=Path(`/portainer`)
+    ports:
+      - 9000:9000
+      #- 9443:9443

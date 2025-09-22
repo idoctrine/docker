@@ -1,0 +1,15 @@
+services:
+  dagu:
+    container_name: dagu
+    hostname: dagu
+    image: ghcr.io/dagu-org/dagu:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./config:/config
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

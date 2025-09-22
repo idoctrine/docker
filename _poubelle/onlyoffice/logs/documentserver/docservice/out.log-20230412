@@ -1,0 +1,769 @@
+[2023-04-10T10:01:09.928] [WARN] nodeJS - Express server starting...
+[2023-04-10T10:01:09.933] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-10T10:01:10.101] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-10T10:02:19.322] [WARN] nodeJS - Express server starting...
+[2023-04-10T10:02:19.327] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-10T10:02:19.388] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-10T11:02:25.408] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.2' is not allowed to connect to this MySQL server
+[2023-04-10T11:02:25.410] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.2' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T11:27:27.927] [ERROR] nodeJS - [AMQP] conn error Error: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+[2023-04-10T11:27:28.382] [ERROR] nodeJS - [AMQP] conn error Error: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+[2023-04-10T12:02:25.534] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.2' is not allowed to connect to this MySQL server
+[2023-04-10T12:02:25.537] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.2' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T12:44:10.500] [WARN] nodeJS - Express server starting...
+[2023-04-10T12:44:10.506] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-10T12:44:10.600] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-10T12:45:17.524] [WARN] nodeJS - Express server starting...
+[2023-04-10T12:45:17.529] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-10T12:45:17.597] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-10T13:45:17.803] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T13:45:17.812] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T14:45:17.924] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T14:45:17.926] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T15:45:17.988] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T15:45:17.989] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T16:54:03.970] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T16:54:03.971] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T18:38:31.258] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T18:38:31.290] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T19:48:08.337] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T19:48:08.338] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T20:57:23.492] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T20:57:23.492] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T21:57:23.275] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T21:57:23.275] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-10T22:03:12.925] [WARN] nodeJS - Express server starting...
+[2023-04-10T22:03:12.936] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-10T22:03:13.443] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-10T22:04:24.166] [WARN] nodeJS - Express server starting...
+[2023-04-10T22:04:24.177] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-10T22:04:24.229] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-10T23:26:26.342] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-10T23:26:26.349] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T00:26:26.283] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T00:26:26.285] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T00:28:31.718] [WARN] nodeJS - Express server starting...
+[2023-04-11T00:28:31.722] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-11T00:28:31.998] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-11T00:29:31.253] [WARN] nodeJS - Express server starting...
+[2023-04-11T00:29:31.257] [WARN] nodeJS - Failed to subscribe to plugin folder updates. When changing the list of plugins, you must restart the server. https://nodejs.org/docs/latest/api/fs.html#fs_availability
+[2023-04-11T00:29:31.302] [WARN] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 6.4.2. Build: 6
+[2023-04-11T02:09:15.587] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T02:09:15.588] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T09:17:44.858] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T09:17:44.877] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T11:15:11.968] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T11:15:11.969] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T12:18:27.663] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T12:18:27.663] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T16:56:26.029] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T16:56:26.032] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T19:16:35.368] [ERROR] nodeJS - pool.getConnection error: Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+[2023-04-11T19:16:35.377] [ERROR] nodeJS - checkFileExpire error:
+Error: ER_HOST_NOT_PRIVILEGED: Host '172.172.0.8' is not allowed to connect to this MySQL server
+    at Handshake.Sequence._packetToError (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T20:16:35.394] [ERROR] nodeJS - pool.getConnection error: Error: getaddrinfo ENOTFOUND mysql mysql:3306
+[2023-04-11T20:16:35.394] [ERROR] nodeJS - checkFileExpire error:
+Error: getaddrinfo ENOTFOUND mysql mysql:3306
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T22:31:23.089] [ERROR] nodeJS - pool.getConnection error: Error: getaddrinfo ENOTFOUND mysql mysql:3306
+[2023-04-11T22:31:23.090] [ERROR] nodeJS - checkFileExpire error:
+Error: getaddrinfo ENOTFOUND mysql mysql:3306
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-11T23:59:30.867] [ERROR] nodeJS - pool.getConnection error: Error: getaddrinfo ENOTFOUND mysql mysql:3306
+[2023-04-11T23:59:30.868] [ERROR] nodeJS - checkFileExpire error:
+Error: getaddrinfo ENOTFOUND mysql mysql:3306
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-12T01:59:43.235] [ERROR] nodeJS - pool.getConnection error: Error: getaddrinfo ENOTFOUND mysql mysql:3306
+[2023-04-12T01:59:43.240] [ERROR] nodeJS - checkFileExpire error:
+Error: getaddrinfo ENOTFOUND mysql mysql:3306
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-12T03:41:14.627] [ERROR] nodeJS - pool.getConnection error: Error: getaddrinfo ENOTFOUND mysql mysql:3306
+[2023-04-12T03:41:14.627] [ERROR] nodeJS - checkFileExpire error:
+Error: getaddrinfo ENOTFOUND mysql mysql:3306
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-12T09:21:10.283] [ERROR] nodeJS - pool.getConnection error: Error: connect ECONNREFUSED 172.172.0.12:3306
+[2023-04-12T09:21:10.285] [ERROR] nodeJS - checkFileExpire error:
+Error: connect ECONNREFUSED 172.172.0.12:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)
+[2023-04-12T10:21:10.445] [ERROR] nodeJS - pool.getConnection error: Error: connect ECONNREFUSED 172.172.0.4:3306
+[2023-04-12T10:21:10.447] [ERROR] nodeJS - checkFileExpire error:
+Error: connect ECONNREFUSED 172.172.0.4:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+    --------------------
+    at Protocol._enqueue (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/snapshot/server/build/server/DocService/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/snapshot/server/build/server/DocService/node_modules/mysql/lib/Pool.js:48:16)
+    at Object.exports.sqlQuery (/snapshot/server/build/server/DocService/sources/mySqlBaseConnector.js:0:0)
+    at exports.FileStatus (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at new Promise (<anonymous>)
+    at Object.getExpired (/snapshot/server/build/server/DocService/sources/taskresult.js:0:0)
+    at /snapshot/server/build/server/DocService/sources/gc.js:0:0
+    at Generator.next (<anonymous>)
+    at onFulfilled (/snapshot/server/build/server/DocService/node_modules/co/index.js:65:19)
+    at /snapshot/server/build/server/DocService/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at co (/snapshot/server/build/server/DocService/node_modules/co/index.js:50:10)
+    at Timeout.checkFileExpire [as _onTimeout] (/snapshot/server/build/server/DocService/sources/gc.js:0:0)
+    at ontimeout (timers.js:436:11)

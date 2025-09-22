@@ -1,0 +1,33 @@
+services:
+  cache:
+    container_name: cache
+    image: redis:7.0-alpine
+    networks:
+      - portainer_networks
+
+  directus:
+    container_name: directus
+    image: directus/directus:latest
+    ports:
+      - 8055:8055
+    volumes:
+      - ./uploads:/directus/uploads
+    depends_on:
+      - cache
+    environment:
+      - "DB_CLIENT=postgres"    
+      - "DB_HOST=postgres"
+      - "DB_PORT=5432"
+      - "DB_DATABASE=directus"
+      - "DB_USER=postgres"
+      - "DB_PASSWORD=postgres"
+      - "ADMIN_EMAIL=idoctrine@gmail.com"
+      - "ADMIN_PASSWORD=admin"
+      - "KEY=secret"
+      - "SECRET=secret"
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

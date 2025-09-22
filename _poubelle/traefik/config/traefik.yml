@@ -1,0 +1,22 @@
+## traefik.yml
+
+# Docker configuration backend
+providers:
+  docker:
+    exposedByDefault: false
+    useBindPortIP: true
+    network: portainer_networks
+    httpClientTimeout: 42s
+    #allowEmptyServices: true
+    #defaultRule: "Host(`{{ trimPrefix `/` .Name }}.docker.localhost`)"
+    #defaultRule: "Host(`{{ index .Labels \"com.docker.compose.service\"}}.lan.to`,`{{ index .Labels \"com.docker.compose.service\"}}.lan`)"
+
+
+entryPoints:
+  web:
+    address: :80
+
+# API and dashboard configuration
+api:
+  insecure: true
+  dashboard: true

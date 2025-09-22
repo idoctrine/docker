@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+
+### Authentification et autorisation ###
+  keycloak:
+    container_name: keycloak
+    image: jboss/keycloak:latest
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: passwd
+      KEYCLOAK_IMPORT: /tmp/Agents-realm.json,/tmp/Federation-realm.json
+      KEYCLOAK_LOGLEVEL: INFO
+      DB_VENDOR: mysql
+      DB_ADDR: mysql
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_PASSWORD: keycloak
+    command: [ "-b 0.0.0.0", "-Djboss.http.port=9310" ]
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.keycloak.rule=Path(`/keycloak`)
+    ports:
+      - "9310:9310"
+    volumes:
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/keycloak:/tmp
+    deploy:
+      resources:
+        limits:
+          memory: 500M
+        reservations:
+          memory: 100M
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

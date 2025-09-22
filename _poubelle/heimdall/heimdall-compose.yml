@@ -1,0 +1,19 @@
+services:
+  heimdall:
+    container_name: heimdall
+    image: linuxserver/heimdall:latest
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.heimdall.rule=Path(`/heimdall`)
+      - deunhealth.restart.on.unhealthy=true
+      - diun.enable=true
+    environment:
+      - PUID=1000 #cmd id user 
+      - PGID=1000 #cmd id user
+      - TZ=Europe/Paris
+    volumes:
+      - ./heimdall:/config
+    ports:
+      - 1080:80
+      - 1443:443
+    restart: unless-stopped

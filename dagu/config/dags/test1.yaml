@@ -1,0 +1,8 @@
+name: hello world
+steps:
+  - name: s1
+    command: echo hello world s1
+  - name: s2
+    command: echo hello world s2
+    depends:
+      - s1

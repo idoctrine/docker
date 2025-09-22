@@ -1,0 +1,9 @@
+services:
+  nextcloud:
+    image: nextcloud:stable-apache
+    container_name: nextcloud
+    restart: always
+    volumes:
+      - /home/idoctrine/docker/nextcloud:/var/www/html
+    ports:
+      - 8080:80

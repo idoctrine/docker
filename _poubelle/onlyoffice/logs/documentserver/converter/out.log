@@ -1,0 +1,29 @@
+[2023-04-12T14:37:22.143] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-12T14:37:22.256] [WARN] nodeJS - worker 2387 started.
+[2023-04-12T14:37:22.298] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-12T14:38:23.686] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-12T14:38:23.700] [WARN] nodeJS - worker 2496 started.
+[2023-04-12T14:38:23.704] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-12T20:41:57.994] [ERROR] nodeJS - [AMQP] conn error Error: write ECONNRESET
+    at afterWriteDispatched (internal/stream_base_commons.js:78:25)
+    at writeGeneric (internal/stream_base_commons.js:73:3)
+    at Socket._writeGeneric (net.js:714:5)
+    at Socket._write (net.js:726:8)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at Socket.Writable.write (_stream_writable.js:299:11)
+    at Connection.C.sendBytes (/snapshot/server/build/server/Common/node_modules/amqplib/lib/connection.js:519:15)
+    at Connection.C.sendHeartbeat (/snapshot/server/build/server/Common/node_modules/amqplib/lib/connection.js:523:15)
+    at Heart.<anonymous> (/snapshot/server/build/server/Common/node_modules/amqplib/lib/connection.js:433:12)
+    at Heart.emit (events.js:198:13)
+    at Heart.runHeartbeat (/snapshot/server/build/server/Common/node_modules/amqplib/lib/heartbeat.js:88:17)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+[2023-04-17T00:41:20.192] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-17T00:41:20.229] [WARN] nodeJS - worker 894 started.
+[2023-04-17T00:41:20.235] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-17T00:42:31.784] [WARN] nodeJS - update cluster with 1 workers
+[2023-04-17T00:42:31.799] [WARN] nodeJS - worker 1039 started.
+[2023-04-17T00:42:31.804] [WARN] nodeJS - update cluster with 1 workers

@@ -1,0 +1,54 @@
+services:
+  mysql:
+    image: mariadb:11.5.2
+    container_name: mysql
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --bind-address=0.0.0.0
+      --explicit_defaults_for_timestamp=true
+      # innodb_force_recovery=6 innodb_purge_threads=0
+    volumes:
+      - "/Users/idoctrine/gdrive/Dev/docker-data/mysql-data:/var/lib/mysql"
+      #- "/Users/idoctrine/Downloads/me/mysql_0/conf:/etc/mysql"
+    user: mysql
+    environment:
+      - "MYSQL_ROOT_HOST=%"
+      - "MYSQL_ROOT_PASSWORD=root"
+    ports:
+      - "3306:3306"
+    restart: always
+    networks:
+      - portainer_networks
+
+  postgres:
+    container_name: postgres
+    image: postgres:16.6-alpine3.20
+    ports:
+      - "5432:5432"
+    volumes:
+      - /Users/idoctrine/gdrive/Dev/docker-data/postgres-data:/var/lib/postgresql/data
+      #- ./backup/backup-postgres:/tmp/backup-postgres
+      #- ./postgres/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    networks:
+      - portainer_networks
+
+  adminer:
+    container_name: adminer
+    image: dockette/adminer:full
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - /Users/idoctrine/gdrive/Dev/www:/srv
+    depends_on:
+      - mysql
+      - postgres
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

@@ -1,0 +1,7 @@
+nexus:
+  container_name: nexus
+  image: sonatype/nexus:latest
+  ports:
+  - "8081:8081"
+  volumes:
+  - ./home:/sonatype-work

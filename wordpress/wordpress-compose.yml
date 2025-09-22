@@ -1,0 +1,21 @@
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    volumes:
+      - ./wp_data:/var/www/html
+      - ./wp_data/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    ports:
+      - 7080:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_NAME=wordpress
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

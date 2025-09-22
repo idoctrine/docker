@@ -1,0 +1,94 @@
+version: '3'
+
+services:
+    web_nginx:
+        image: nginx:stable-alpine
+        container_name: web_nginx
+        volumes:
+            - "/Volumes/work/workspace/datas/projets/www:/usr/share/nginx/html"
+            - "/Volumes/work/workspace/datas/docker/docker-conf/nginx/log:/var/log/nginx"
+            - "/Volumes/work/workspace/datas/docker/docker-conf/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
+        ports:
+            - "127.0.0.1:80:80"
+        networks:
+            - default
+
+    web_php:
+        #image: php:fpm-alpine
+        # find Dockerfile ds le rep /Volumes/work/workspace/datas/docker/docker-conf/nginx
+        build: '/Volumes/work/workspace/datas/docker/docker-conf/nginx'
+        container_name: web_php
+        volumes:
+            - "/Volumes/work/workspace/datas/projets/www:/script"
+            - "/Volumes/work/workspace/datas/docker/docker-conf/nginx/php.ini:/usr/local/etc/php/php.ini"
+        networks:
+            - default
+
+    web_postgres:
+        image: postgres:14.5
+        container_name: postgres
+        shm_size: "256m"
+        ports:
+        - "5432:5432"
+        volumes:
+        - /Volumes/work/workspace/datas/docker/docker-conf/postgres/conf:/bitnami/postgresql/conf
+        - /Volumes/work/workspace/datas/docker/docker-conf/postgres/data:/var/lib/postgresql/data
+        environment:
+        - POSTGRES_REPLICATION_MODE=true
+        - POSTGRES_USERNAME=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DATABASE=postgres
+        networks:
+            - default
+
+    web_redis:
+        image: redis:7.0.4
+        container_name: redis
+        command: "--port 9010"
+        ports:
+        - "9010:9010"
+        networks:
+            - default
+
+    web_keycloak:
+        image: jboss/keycloak:16.1.1
+        container_name: web_keycloak
+        command: [ "-b 0.0.0.0", "-Djboss.http.port=9310" ]
+        volumes:
+#i            - /Volumes/work/workspace/datas/docker/keycloak/themes:/opt/jboss/keycloak/themes
+#i            #- /Volumes/work/workspace/datas/docker/keycloak/configuration:/opt/jboss/keycloak/standalone/configuration
+#i            - /Volumes/work/workspace/datas/docker/keycloak/scripts:/opt/jboss/scripts
+#i            - /Volumes/work/workspace/datas/docker/keycloak/providers:/opt/jboss/keycloak/providers
+#i            - /Volumes/work/workspace/datas/docker/keycloak/tmp:/tmp
+            - /Users/idoctrine/Desktop/mi/erpc-group/permis/gndc/tools/infra/keycloak:/tmp
+        environment:
+            - KEYCLOAK_USER=admin 
+            - KEYCLOAK_PASSWORD=passwd
+            - DB_VENDOR=postgres
+            - DB_ADDR=postgres
+            - DB_DATABASE=keycloak
+            - DB_USER=postgres
+            - DB_PASSWORD=postgres
+            - KEYCLOAK_LOGLEVEL=INFO
+            - KEYCLOAK_IMPORT=/tmp/Agents-realm.json,/tmp/Federation-realm.json
+        ports:
+            #- 8082:8080
+            - 9310:9310
+        networks:
+            - default
+
+    web_mysql:
+        image: mysql:8.0.25
+        container_name: mysql
+        cap_add:
+            - SYS_NICE  # CAP_SYS_NICE
+        command: --default-authentication-plugin=mysql_native_password --lower_case_table_names=1 --verbose
+        volumes:
+            - "/Volumes/work/workspace/datas/docker/docker-conf/mysql/data:/var/lib/mysql"
+            - "/Volumes/work/workspace/datas/docker/docker-conf/mysql/conf:/etc/mysql"
+        environment:
+            - "MYSQL_ROOT_PASSWORD=root"
+        ports:
+            - "3306:3306"
+        networks:
+            - default

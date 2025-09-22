@@ -1,0 +1,29 @@
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins:jdk21
+    ports:
+      - "9080:8080"
+    labels:
+      - traefik.enable=true
+      #- traefik.http.routers.jenkins.rule=Path(`/jenkins`, `/jenkins/{.*a}`)
+    environment:
+      - MAVEN_HOME=/var/jenkins_home/maven
+      - M2_HOME=/var/jenkins_home/maven
+      - NODE_HOME=/var/jenkins_home/nodejs
+      - ANGULAR_CLI=/var/jenkins_home/angular-cli
+      #- JENKINS_OPTS="--prefix=/jenkins"
+      #- PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/jenkins_home/nodejs/bin:/var/jenkins_home/maven/bin:/var/jenkins_home/angular-cli/bin
+      #- JAVA_OPTS="-Xmx2048m -Djava.awt.headless=true"
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      #- ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/jenkins/home:/var/jenkins_home
+      #- ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/jenkins/_ssh:/var/jenkins_home/.ssh
+      #- ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/jenkins/config/gitconfig:/var/jenkins_home/.gitconfig
+      #- /Applications/Docker.app/Contents/Resources:/app/docker
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

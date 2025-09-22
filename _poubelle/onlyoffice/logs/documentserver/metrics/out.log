@@ -1,0 +1,676 @@
+12 Apr 14:37:21 - [2355] reading config file: ./config/config.js
+12 Apr 14:37:21 - server is up INFO
+Flushing stats at  Wed Apr 12 2023 14:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: {},
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 14:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 15:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 15:17:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 15:27:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 17:30:15 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 6774 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 17:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': -174 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 17:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 17:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 18:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 18:17:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 18:27:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 18:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 19:53:12 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 3951 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 20:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 249 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 20:41:56 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 1475 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 22:15:48 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 5032 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 22:27:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 93 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 22:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 22:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 22:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 23:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 23:17:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 23:27:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 23:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 23:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Wed Apr 12 2023 23:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Thu Apr 13 2023 00:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Thu Apr 13 2023 00:17:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Thu Apr 13 2023 00:27:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Thu Apr 13 2023 00:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Thu Apr 13 2023 00:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Thu Apr 13 2023 00:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 08:13:39 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 284778 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 08:27:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 222 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 08:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 09:00:16 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 775 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 09:34:25 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 1449 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 09:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 176 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 09:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 10:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 10:29:38 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 737 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 10:37:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': -137 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 10:47:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 10:57:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 11:07:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+Flushing stats at  Sun Apr 16 2023 11:17:21 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: { 'statsd.timestamp_lag': 0 },
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }
+17 Apr 00:41:20 - [862] reading config file: ./config/config.js
+17 Apr 00:41:20 - server is up INFO
+Flushing stats at  Mon Apr 17 2023 00:51:20 GMT+0000 (Coordinated Universal Time)
+{ counters:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  timers: {},
+  gauges: {},
+  timer_data: {},
+  counter_rates:
+   { 'statsd.bad_lines_seen': 0,
+     'statsd.packets_received': 0,
+     'statsd.metrics_received': 0 },
+  sets: {},
+  pctThreshold: [ 90 ] }

@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+    elasticsearch:
+        image: elasticsearch:7.17.8
+        container_name: elasticsearch
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.elasticsearch.rule=Path(`/elasticsearch`)
+        volumes:
+            - "${PORTAINER_PREFIXE}/${PORTAINER_DATA}/elasticsearch/data:/usr/share/elasticsearch/data"
+        environment:
+            - "discovery.type=single-node"
+        ports:
+            - "9200:9200"
+            - "9300:9300"
+        networks:
+        - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

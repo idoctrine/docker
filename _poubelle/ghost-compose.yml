@@ -1,0 +1,18 @@
+services:
+  ghost:
+    container_name: ghost
+    image: ghost:5-alpine
+    volumes:
+      - ./ghost:/var/lib/ghost/content
+    restart: always
+    environment:
+      database__client: mysql
+      database__connection__host: mysql
+      database__connection__user: ghost
+      database__connection__password: ghost
+      database__connection__database: ghost
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.ghost.rule=Path(`/ghost`)
+    ports:
+      - 2368:2368

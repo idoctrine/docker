@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  traefik:
+    # The official v2 Traefik docker image
+    image: traefik:v2.9
+    container_name: traefik
+    # Enables the web UI and tells Traefik to listen to docker
+    command:
+      - "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+    ports:
+      # The HTTP port
+      - "80:80"
+      # The Web UI (enabled by --api.insecure=true)
+      - "8080:8080"
+      - "443:443"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/traefik/traefik.yml:/etc/traefik/traefik.yml
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/traefik/acme.json:/acme.json
+    restart: unless-stopped
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

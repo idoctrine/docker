@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  kopia:
+    container_name: kopia
+    image: kopia/kopia:latest
+    environment:
+      - PUID=1000 #cmd id user 
+      - PGID=1000 #cmd id user
+      - KOPIA_PASSWORD=admin
+    labels:
+      - "traefik.http.routers.kopia.rule=Path(`/kopia`)"
+    volumes:
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/kopia/config:/app/config
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/kopia/cache:/app/cache
+      - ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/kopia/rclone:/app/rclone
+    restart: unless-stopped
+    networks:
+      - portainer_networks
+
+networks:
+  portainer_networks:
+    external: true

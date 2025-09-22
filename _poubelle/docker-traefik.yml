@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    web-traefik:
+        image: traefik:v2.5.2
+        container_name: web-traefik
+        #volumes:
+        #    - "/Volumes/work/workspace/datas/www:/usr/share/nginx/html:ro"
+        #ports:
+        #    - "127.0.0.1:80:80"
+        networks:
+            - default
