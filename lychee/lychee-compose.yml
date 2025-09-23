@@ -22,7 +22,7 @@ services:
     environment:
       - TZ=${TIMEZONE:-UTC}
     volumes:
-      - cache:/data:rw
+      - /Users/idoctrine/gdrive/Dev/docker-data/lychee-data/cache:/data:rw
     restart: on-failure:5
     networks:
       - portainer_networks
@@ -35,11 +35,11 @@ services:
     ports:
       - 90:80
     volumes:
-      - ./conf:/conf
-      - ./uploads:/uploads
-      - ./sym:/sym
-      - ./logs:/logs
-      - ./tmp:/lychee-tmp
+      - /Users/idoctrine/gdrive/Dev/docker-data/lychee-data/conf:/conf
+      - /Users/idoctrine/gdrive/Dev/docker-data/lychee-data/uploads:/uploads
+      - /Users/idoctrine/gdrive/Dev/docker-data/lychee-data/sym:/sym
+      - /Users/idoctrine/gdrive/Dev/docker-data/lychee-data/logs:/logs
+      - /Users/idoctrine/gdrive/Dev/docker-data/lychee-data/tmp:/lychee-tmp
     env_file:
       - path: ./.env
         required: false
