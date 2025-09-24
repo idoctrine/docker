@@ -19,7 +19,7 @@ services:
       - /Users/idoctrine/gdrive/Dev/docker-data/jenkins_data/jenkins_home:/var/jenkins_home
       - /Users/idoctrine/gdrive/Dev/docker-data/jenkins_data/_ssh:/var/jenkins_home/.ssh
       - /Users/idoctrine/gdrive/Dev/docker-data/jenkins_data/gitconfig:/var/jenkins_home/.gitconfig
-      - /Applications/Docker.app/Contents/Resources:/app/docker
+      #- /Applications/Docker.app/Contents/Resources:/app/docker
     networks:
       - portainer_networks
 
