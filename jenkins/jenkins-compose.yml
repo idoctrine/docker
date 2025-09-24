@@ -16,11 +16,10 @@ services:
       #- PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/jenkins_home/nodejs/bin:/var/jenkins_home/maven/bin:/var/jenkins_home/angular-cli/bin
       #- JAVA_OPTS="-Xmx2048m -Djava.awt.headless=true"
     volumes:
-      - ./jenkins_home:/var/jenkins_home
-      #- ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/jenkins/home:/var/jenkins_home
-      #- ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/jenkins/_ssh:/var/jenkins_home/.ssh
-      #- ${PORTAINER_PREFIXE}/${PORTAINER_DATA}/jenkins/config/gitconfig:/var/jenkins_home/.gitconfig
-      #- /Applications/Docker.app/Contents/Resources:/app/docker
+      - /Users/idoctrine/gdrive/Dev/docker-data/jenkins_data/jenkins_home:/var/jenkins_home
+      - /Users/idoctrine/gdrive/Dev/docker-data/jenkins_data/_ssh:/var/jenkins_home/.ssh
+      - /Users/idoctrine/gdrive/Dev/docker-data/jenkins_data/gitconfig:/var/jenkins_home/.gitconfig
+      - /Applications/Docker.app/Contents/Resources:/app/docker
     networks:
       - portainer_networks
 
